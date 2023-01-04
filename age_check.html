@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age Checker</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 >Driving Age Checker</h1>
+    <input type="number" placeholder="Enter Your Age" id="1234"/>
+    <button  onclick="agechecker()" style="color: red; background-color: teal;">Check</button>
+    <p id="6789" style="text-align: center; font-size: xx-large; font-weight: bold;"></p>
+
+
+</body>
+</html>
+<script>
+    function agechecker(){
+        let Age=document.getElementById("1234").value
+        if(Age>18){
+            document.getElementById("6789").innerText="You can drive in India!";
+        }
+        else if(Age<18){
+            document.getElementById("6789").innerText="You can't drive in India";
+        }
+        else {
+            document.getElementById("6789").innerText="You are just old enough to drive in India!";
+        }
+
+    }
+</script>
